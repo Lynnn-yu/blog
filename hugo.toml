@@ -26,7 +26,7 @@ titleCaseStyle = "none"
 pluralizeListTitles = false
 
 # The length of text in words to show in summary
-summaryLength = 30
+summaryLength = 10
 
 # Enable Emoji emoticons support?
 enableEmoji = true
