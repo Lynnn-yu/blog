@@ -476,7 +476,7 @@ uglyURLs = false
 
     # Display count of posts in each
     # taxonomy term?
-    displayTaxonomyTermCount = true
+    displayTaxonomyTermCount = false
 
     # Set to a non-negative number to limit
     # the number of posts displayed per
