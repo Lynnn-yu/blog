@@ -1,5 +1,5 @@
 ---
-title: "Floyd 判圈算法（Floyd’s Cycle Detection Algorithm）"
+title: "Floyd 判圈算法"
 date: 2024-09-20
 tags: ["算法", "Floyd 判圈算法", "数据结构"]
 categories: ["技术博客"]
