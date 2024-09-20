@@ -33,7 +33,7 @@ jobs:
                   # 生成的 token 就用在这里，因为下面用到 external repository
                   PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }} 
                   # 替换为新建 Github Pages 仓库中的仓库名称
-                  EXTERNAL_REPOSITORY: username/username.github.io
+                  EXTERNAL_REPOSITORY: Lynnn-yu/Lynnn-yu.github.io
                    # 以及对应的分支 master
                   PUBLISH_BRANCH: master 
                   # 指定将自动部署得到的 public 文件夹 push 上去
