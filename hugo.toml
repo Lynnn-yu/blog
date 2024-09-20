@@ -1,10 +1,10 @@
 ##########################################
 # Site Settings
 
-baseURL = "https://example.com/"
+baseURL = "https://lynnn-yu.github.io/"
 title = "Lynn's Blog"
 languageCode = "en"
-hasCJKLanguage = false
+hasCJKLanguage = true
 # Copyright information (Markdown supported)
 copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
 
@@ -26,10 +26,10 @@ titleCaseStyle = "none"
 pluralizeListTitles = false
 
 # The length of text in words to show in summary
-summaryLength = 42
+summaryLength = 30
 
 # Enable Emoji emoticons support?
-enableEmoji = false
+enableEmoji = true
 
 # Text to display for footnote return links
 footnoteReturnLinkContents = "↩"
@@ -351,15 +351,15 @@ uglyURLs = false
     siteLogo = "/icons/apple-touch-icon.png"
     # Note: used for JSON-LD, Open Graph
 
-    siteDescription = "MemE is a powerful and highly customizable GoHugo theme for personal blogs."
+    siteDescription = "Lynn's Blog"
     # Note: used for HTML head meta, JSON-LD,
     #       Open Graph, Atom, RSS
 
-    siteCreatedTime = "1969-07-20T20:17:43+00:00"
+    siteCreatedTime = "2024-07-20T20:17:43+00:00"
     # ATTENTION: keep this format, change
     #            the number
 
-    siteTwitter = "Lynn"
+    #siteTwitter = "Lynn"
     # Note: used for Twitter Cards
 
 
@@ -619,7 +619,7 @@ uglyURLs = false
     ######################################
     # MathJax (chemical equation supported)
 
-    enableMathJax = false
+    enableMathJax = true
     # Note: *global settings*
     #       `mathjax` in post’s Front Matter
     #       has a higher priority than here
@@ -630,7 +630,7 @@ uglyURLs = false
     ######################################
     # Mermaid (https://github.com/mermaid-js/mermaid)
 
-    enableMermaid = false
+    enableMermaid = true
     # Note: *global settings*
     #       `mermaid` in post’s Front Matter
     #       has a higher priority than here
@@ -901,7 +901,7 @@ uglyURLs = false
     ######################################
     # Table of Contents
 
-    enableTOC = false
+    enableTOC = true
     # Note: *global settings*
     #       `toc` in post’s Front Matter
     #       has a higher priority than here
@@ -1115,7 +1115,7 @@ uglyURLs = false
     ######################################
     ## Drop Cap
 
-    enableDropCap = true
+    enableDropCap = false
     # Note: *global settings*
     #       `dropCap` in post’s Front Matter
     #       has a higher priority than here
@@ -1155,7 +1155,7 @@ uglyURLs = false
     ######################################
     ## Chinese Punctuation Glyph Correction
 
-    enableChinesePunctuationGlyphCorrection = false
+    enableChinesePunctuationGlyphCorrection = true
 
 
     ######################################
@@ -1340,7 +1340,7 @@ uglyURLs = false
     # Custom Footer (Markdown supported)
     customFooter = ""
 
-    displayBusuanziSiteUVAndPV = false
+    displayBusuanziSiteUVAndPV = true
     busuanziSiteUVText = "Site UV"
     busuanziSiteUVIcon = "user"
     busuanziSitePVText = "Site PV"
@@ -1359,7 +1359,7 @@ uglyURLs = false
     ######################################
     # Multilingual
 
-    enableLangToggle = false
+    enableLangToggle = true
 
     hideLangToggleInHome = false
 
