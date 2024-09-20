@@ -1,6 +1,8 @@
 @echo off
 cd /d %~dp0
 
+hugo 
+
 echo add new blog...
 git add .
 
