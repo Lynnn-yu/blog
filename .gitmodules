@@ -1,3 +1,7 @@
 [submodule "themes/meme"]
 	path = themes/meme
 	url = https://github.com/reuixiy/hugo-theme-meme.git
+
+[submodule "blog"]
+    path = blog
+    url = git@github.com:Lynnn-yu/blog.git
