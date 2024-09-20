@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title type="text">Lynn&#39;s Blog</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2024-09-20T16:55:38&#43;08:00</updated>
+    <updated>2024-09-20T18:33:04&#43;08:00</updated>
     <id>https://example.com/</id>
     <link rel="alternate" type="text/html" href="https://example.com/" />
     <link rel="self" type="application/atom&#43;xml" href="https://example.com/atom.xml" />
@@ -16,4 +16,118 @@
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights>
     <generator uri="https://gohugo.io/" version="0.134.2">Hugo</generator>
+        <entry>
+            <title type="text">Floyd 判圈算法（Floyd’s Cycle Detection Algorithm）</title>
+            <link rel="alternate" type="text/html" href="https://example.com/posts/floyd-algorithm/" />
+            <id>https://example.com/posts/floyd-algorithm/</id>
+            <updated>2024-09-20T17:24:18&#43;08:00</updated>
+            <published>2024-09-20T00:00:00&#43;00:00</published>
+            <author>
+                    <name>Lynn</name>
+                    <uri>https://io-oi.me/</uri>
+                    <email>wanglingyunj@163.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">本文介绍了 Floyd 判圈算法的原理和应用，并结合代码示例讲解了如何通过该算法检测链表中的环。</summary>
+            
+                <content type="html">&lt;h1 id=&#34;floyd-判圈算法floyds-cycle-detection-algorithm&#34;&gt;Floyd 判圈算法（Floyd’s Cycle Detection Algorithm）&lt;/h1&gt;
+&lt;h2 id=&#34;什么是-floyd-判圈算法&#34;&gt;什么是 Floyd 判圈算法？&lt;/h2&gt;
+&lt;p&gt;Floyd 判圈算法，也叫 &lt;strong&gt;龟兔赛跑算法&lt;/strong&gt;（Tortoise and Hare Algorithm），是一种用于检测链表中是否存在环的算法。该算法由 Robert W. Floyd 提出，旨在通过两个不同速度的指针遍历链表来判断链表是否存在循环。其时间复杂度为 O(n)，空间复杂度为 O(1)，因此在效率和资源占用方面非常优越。&lt;/p&gt;
+&lt;h2 id=&#34;算法原理&#34;&gt;算法原理&lt;/h2&gt;
+&lt;p&gt;Floyd 判圈算法使用两个指针：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;慢指针&lt;/strong&gt;（Tortoise）：每次移动一步。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;快指针&lt;/strong&gt;（Hare）：每次移动两步。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果链表中存在环，那么快指针和慢指针最终会在环中相遇。如果链表中不存在环，快指针会先到达链表的末端。&lt;/p&gt;
+&lt;h3 id=&#34;主要步骤如下&#34;&gt;主要步骤如下：&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;初始化两个指针：慢指针 &lt;code&gt;slow&lt;/code&gt; 和快指针 &lt;code&gt;fast&lt;/code&gt; 都指向链表的头部。&lt;/li&gt;
+&lt;li&gt;快指针每次移动两步，慢指针每次移动一步。&lt;/li&gt;
+&lt;li&gt;如果快指针和慢指针在某个时刻相遇，则说明链表中存在环。&lt;/li&gt;
+&lt;li&gt;如果快指针到达 &lt;code&gt;null&lt;/code&gt;（链表的末尾），则说明链表中没有环。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;代码实现&#34;&gt;代码实现&lt;/h2&gt;
+&lt;p&gt;下面是使用 Python 实现的 Floyd 判圈算法：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;ListNode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;fm&#34;&gt;__init__&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;bp&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;next&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;None&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;bp&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;value&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;value&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;bp&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;next&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;next&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;has_cycle&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;slow&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;head&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;fast&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;head&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;fast&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;is&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;not&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;None&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;and&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;fast&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;next&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;is&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;not&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;None&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;slow&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;slow&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;next&lt;/span&gt;          &lt;span class=&#34;c1&#34;&gt;# 慢指针每次移动一步&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;fast&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;fast&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;next&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;next&lt;/span&gt;     &lt;span class=&#34;c1&#34;&gt;# 快指针每次移动两步&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;slow&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;fast&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;          &lt;span class=&#34;c1&#34;&gt;# 如果相遇，则存在环&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;True&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;False&lt;/span&gt;                  &lt;span class=&#34;c1&#34;&gt;# 如果遍历结束没有相遇，则不存在环&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/categories/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/" term="技术博客" label="技术博客" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/%E7%AE%97%E6%B3%95/" term="算法" label="算法" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/floyd-%E5%88%A4%E5%9C%88%E7%AE%97%E6%B3%95/" term="Floyd 判圈算法" label="Floyd 判圈算法" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" term="数据结构" label="数据结构" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
 </feed>
