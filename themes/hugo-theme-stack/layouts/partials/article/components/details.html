@@ -9,6 +9,16 @@
     </header>
     {{ end }}
 
+    {{ if .Params.tags }}
+    <header class="article-tag">
+        {{ range (.GetTerms "tags") }}
+            <a href="{{ .RelPermalink }}" {{ with .Params.style }}style="background-color: {{ .background }}; color: {{ .color }};"{{ end }}>
+                {{ .LinkTitle }}
+            </a>
+        {{ end }}
+    </header>
+    {{ end }}
+
     <div class="article-title-wrapper">
         <h2 class="article-title">
             <a href="{{ .RelPermalink }}">
