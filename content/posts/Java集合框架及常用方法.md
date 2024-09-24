@@ -10,9 +10,9 @@ description: "Java 集合框架提供了一套综合的接口和类，用于表�
 summary: "Java 集合框架提供了一套综合的接口和类，用于表示和操作数据组，使得数据集的操作更加直观和统一。这个框架包括集合、列表、队列、映射等多种数据结构，每种都有其特定的用途和优化。"
 ---
 
-# 核心接口
+## 核心接口
 
-## 一、 Collection
+### 一、 Collection
 
 - **关键方法**: 
 
@@ -38,7 +38,7 @@ summary: "Java 集合框架提供了一套综合的接口和类，用于表示�
   - **parallelStream()**: 返回可能是并行的流，其元素是此集合的元素。
   - **spliterator()**: 在此集合中创建一个Spliterator。
 
-### 1. List
+#### 1. List
 
 - **概述**: `List` 接口扩展自 `Collection` 接口，表示有序的集合。它允许重复的元素并且可以精确控制每个元素的位置。
 
@@ -64,7 +64,7 @@ summary: "Java 集合框架提供了一套综合的接口和类，用于表示�
 
 - **主要实现**: `ArrayList`, `LinkedList`, `Vector`.
 
-### 2. Set
+#### 2. Set
 
 - **概述**: `Set` 接口也是扩展自 `Collection`，代表没有重复元素的集合。
 
@@ -77,7 +77,7 @@ summary: "Java 集合框架提供了一套综合的接口和类，用于表示�
 
 - **主要实现**: `HashSet`, `LinkedHashSet`, `TreeSet`.
 
-### 3. Queue
+#### 3. Queue
 
 - **概述**: `Queue` 接口扩展自 `Collection` 用于存储一组元素，元素的添加和移除遵循特定的顺序，比如先进先出（FIFO）。
 
@@ -99,7 +99,7 @@ summary: "Java 集合框架提供了一套综合的接口和类，用于表示�
 
 - **主要实现**: `LinkedList`, `PriorityQueue`.
 
-## 二、 Map
+### 二、 Map
 
 - **概述**: `Map` 不是 `Collection` 接口的一部分，它表示键值对的映射。每个键最多只能映射到一个值。
 
@@ -141,7 +141,7 @@ summary: "Java 集合框架提供了一套综合的接口和类，用于表示�
 
 
 
-# 数据结构
+## 数据结构
 
 ### 1. 数组 (Array)
 
