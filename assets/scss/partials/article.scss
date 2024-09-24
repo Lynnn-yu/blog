@@ -40,6 +40,10 @@
                     background: nth($defaultTagBackgrounds, $i);
                     color: nth($defaultTagColors, $i);
                 }
+                .article-tag a {
+                    background: nth($defaultTagBackgrounds, $i);
+                    color: nth($defaultTagColors, $i);
+                }
             }
         }
     }
