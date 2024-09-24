@@ -9,7 +9,6 @@ categories: ["技术博客"]
 description: "本文介绍了 Floyd 判圈算法的原理和应用，并结合代码示例讲解了如何通过该算法检测链表中的环。"
 summary: "本文介绍了 Floyd 判圈算法的原理和应用，并结合代码示例讲解了如何通过该算法检测链表中的环。"
 image: "/图.jpg"
-hideImage: true
 typora-root-url: ./..\..\..
 ---
 
@@ -18,8 +17,6 @@ typora-root-url: ./..\..\..
 ## 什么是 Floyd 判圈算法？
 
 Floyd 判圈算法，也叫 **龟兔赛跑算法**（Tortoise and Hare Algorithm），是一种用于检测链表中是否存在环的算法。该算法由 Robert W. Floyd 提出，旨在通过两个不同速度的指针遍历链表来判断链表是否存在循环。其时间复杂度为 O(n)，空间复杂度为 O(1)，因此在效率和资源占用方面非常优越。
-
-![](/图.jpg)
 
 ## 算法原理
 

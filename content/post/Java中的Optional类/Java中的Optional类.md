@@ -8,6 +8,7 @@ tags: ["容器类", "Java"]
 categories: ["技术博客"]
 description: "Optional<T> 是 Java 8 引入的一个容器类，用来解决 `null` 引用的问题。它可以包含或不包含一个非空值。"
 summary: "Optional<T> 是 Java 8 引入的一个容器类，用来解决 `null` 引用的问题。它可以包含或不包含一个非空值。"
+image: "/图.jpg"
 ---
 
 `Optional<T>` 是 Java 8 引入的一个容器类，用来解决 `null` 引用的问题。它可以包含或不包含一个非空值。`Optional` 主要用于避免 `NullPointerException`，使代码更加安全和可读。

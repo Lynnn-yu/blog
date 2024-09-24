@@ -8,6 +8,7 @@ tags: ["SpringBoot", "Spring MVC", "Java"]
 categories: ["技术博客"]
 description: "Spring MVC中，Model实现控制器与视图的数据传递与绑定。"
 summary: "Spring MVC中，Model实现控制器与视图的数据传递与绑定。"
+image: "/图.jpg"
 ---
 
 
