@@ -1,34 +1,19 @@
 ---
-title: About
-description: Hugo, the world's fastest framework for building websites
-date: '2019-02-28'
-aliases:
-  - about-us
-  - about-hugo
-  - contact
-license: CC BY-NC-ND
-lastmod: '2020-10-09'
-menu:
-    main: 
-        weight: -90
-        params:
-            icon: user
+title: "关于我"
+description: "Lynn 的个人简介"
 ---
 
-Written in Go, Hugo is an open source static site generator available under the [Apache License 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+# 关于我
 
-Hugo makes use of a variety of open source projects including:
+你好！我是 **Lynn**，一个热爱技术与分享的博主。在这里，我记录我的学习与生活点滴，希望能与更多志同道合的朋友交流和探讨。
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+## 我的兴趣
+- **编程与技术**：我对后端开发、前端设计、知识图谱、大语言模型以及其他技术充满兴趣。喜欢尝试新技术，并将我的学习成果记录下来。
+- **写作与分享**：通过写作分享自己的知识、经验和想法是我的快乐源泉。我相信，分享能帮助更多的人，同时也是自我提升的好方式。
+- **读书与旅行**：除了技术，我也喜欢读书和旅行。书籍让我开拓视野，旅行让我感受不同的文化与生活方式。
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+## 联系方式
+如果你有任何问题，或者想与我探讨相关话题，欢迎通过以下方式与我联系：
+- **邮箱**: [wanglingyunj@163.com](mailto:wanglingyunj@163.com)
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+期待与你的交流，愿我们都能在知识的海洋中互相帮助、共同进步！
