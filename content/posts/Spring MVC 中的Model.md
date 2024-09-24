@@ -1,6 +1,9 @@
 ---
 title: "Spring MVC 中的Model"
-date: 2024-09-20
+date: 2024/9/20 20:15:06
+draft: false 
+params: 
+  author: Lynn
 tags: ["SpringBoot", "Spring MVC", "Java"]
 categories: ["技术博客"]
 description: "Spring MVC中，Model实现控制器与视图的数据传递与绑定。"

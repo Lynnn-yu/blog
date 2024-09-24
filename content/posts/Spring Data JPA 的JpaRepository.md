@@ -1,6 +1,9 @@
 ---
 title: "Spring Data JPA 的JpaRepository"
-date: 2024-09-20
+date: 2024/9/20 18:15:06
+draft: false 
+params: 
+  author: Lynn
 tags: ["SpringBoot", "Spring Data JPA", "Java"]
 categories: ["技术博客"]
 description: "`JpaRepository` 是 Spring Data JPA 中的一个接口，提供了对数据库实体进行CRUD（Create, Read, Update, Delete）操作的常用方法。"

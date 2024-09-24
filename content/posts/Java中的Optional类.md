@@ -1,6 +1,9 @@
 ---
 title: "Java中的Optional类"
-date: 2024-09-20
+date: 2024/9/20 17:15:06
+draft: false 
+params:
+  author: Lynn
 tags: ["容器类", "Java"]
 categories: ["技术博客"]
 description: "Optional<T> 是 Java 8 引入的一个容器类，用来解决 `null` 引用的问题。它可以包含或不包含一个非空值。"
