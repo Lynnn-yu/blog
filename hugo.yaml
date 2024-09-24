@@ -2,7 +2,7 @@ baseurl: https://lynnn-yu.github.io/
 languageCode: en-us
 theme: hugo-theme-stack
 title: Lynn's Blog
-copyright: Example Person
+copyright: Lynn
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
@@ -15,23 +15,23 @@ hasCJKLanguage: false
 languages:
     en:
         languageName: English
-        title: Example Site
+        title: Lynn's Blog
         weight: 1
         params:
-            description: Example description
+            description: Lynn's Blog
     zh-cn:
         languageName: 中文
-        title: 演示站点
+        title: Lynn的博客
         weight: 2
         params:
-            description: 演示说明
-    ar:
-        languageName: عربي
-        languagedirection: rtl
-        title: موقع تجريبي
-        weight: 3
-        params:
-            description: وصف تجريبي
+            description: Lynn的博客
+    # ar:
+    #     languageName: عربي
+    #     languagedirection: rtl
+    #     title: موقع تجريبي
+    #     weight: 3
+    #     params:
+    #         description: وصف تجريبي
 
 services:
     # Change it to your Disqus shortname before using
@@ -42,7 +42,7 @@ services:
         id:
 
 pagination:
-    pagerSize: 3
+    pagerSize: 5
 
 permalinks:
     post: /p/:slug/
@@ -56,7 +56,7 @@ params:
     favicon: # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
     footer:
-        since: 2020
+        since: 2024
         customText:
 
     dateFormat:
@@ -64,15 +64,15 @@ params:
         lastUpdated: Jan 02, 2006 15:04 MST
 
     sidebar:
-        emoji: 🍥
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        emoji: 🐟
+        subtitle: Record My Tiny World.
         avatar:
             enabled: true
             local: true
             src: img/avatar.png
 
     article:
-        math: false
+        math: true
         toc: true
         readingTime: true
         license:
@@ -214,26 +214,26 @@ menu:
     social:
         - identifier: github
           name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
+          url: https://github.com/Lynnn-yu
           params:
               icon: brand-github
 
-        - identifier: twitter
-          name: Twitter
-          url: https://twitter.com
-          params:
-              icon: brand-twitter
+        # - identifier: twitter
+        #   name: Twitter
+        #   url: https://twitter.com
+        #   params:
+        #       icon: brand-twitter
 
 related:
     includeNewer: true
-    threshold: 60
+    threshold: 50
     toLower: false
     indices:
         - name: tags
-          weight: 100
+          weight: 200
 
         - name: categories
-          weight: 200
+          weight: 100
 
 markup:
     goldmark:
