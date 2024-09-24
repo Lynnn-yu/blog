@@ -1,6 +1,6 @@
 ---
 title: "Spring Data JPA 的JpaRepository"
-date: 2024/9/20 18:15:06
+date: 2024-9-20 18:15:06
 draft: false 
 params: 
   author: Lynn
