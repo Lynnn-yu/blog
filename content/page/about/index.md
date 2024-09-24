@@ -1,7 +1,7 @@
 ---
 title: "关于我"
 description: "Lynn 的个人简介"
-date: '2024-09-24T18:15:06'
+date: '2024-09-20T16:15:06+08:00'
 aliases:
   - about-us
   - contact
