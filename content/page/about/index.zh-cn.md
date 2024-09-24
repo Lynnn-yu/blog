@@ -1,6 +1,16 @@
 ---
 title: "关于我"
 description: "Lynn 的个人简介"
+date: '2024-09-24'
+aliases:
+  - about-us
+  - contact
+license: CC BY-NC-ND
+menu:
+    main: 
+        weight: -90
+        params:
+            icon: user
 ---
 
 # 关于我
