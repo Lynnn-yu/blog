@@ -127,7 +127,8 @@
     }
 }
 
-.article-category{
+.article-category,
+.article-tags {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
@@ -147,42 +148,6 @@
         }
     }
 }
-
-.article-tags {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-
-    a {
-        color: var(--accent-color-text);
-        background-color: var(--accent-color);
-        padding: 8px 16px;
-        border-radius: 10px; /* 更改标签形状 */
-        display: inline-block;
-        font-size: 1.4rem;
-        transition: background-color 0.5s ease;
-        padding-left: 30px; /* 为图标留出空间 */
-
-        &::before {
-            content: ""; /* 图标 */
-            background-image: url('C:\Users\wangl\Lynn_blog\themes\hugo-theme-stack\assets\icons'); /* 图标路径 */
-            background-size: contain;
-            background-repeat: no-repeat;
-            position: absolute;
-            left: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 16px;
-            height: 16px;
-        }
-
-        &:hover {
-            color: var(--accent-color-text);
-            background-color: var(--accent-color-darker);
-        }
-    }
-}
-
 
 /* Compact style article list */
 .article-list--compact {
