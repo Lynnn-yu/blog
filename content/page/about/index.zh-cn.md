@@ -8,6 +8,7 @@ aliases:
 license: CC BY-NC-ND
 menu:
     main: 
+        name: "关于我"
         weight: -90
         params:
             icon: user
