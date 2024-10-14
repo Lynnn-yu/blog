@@ -28,9 +28,13 @@ typora-root-url: ./..\..\..\static
 
 =>问题：对齐调整(常用SFT+RLHF)究竟如何改变基础 LLM？
 
-Method：检查基础 LLM 和其对齐LLM之间的$\\color{red}{token distribution shift}$来分析对齐调整的效果。
+Method：检查基础 LLM 和其对齐LLM之间的**token distribution shift**来分析对齐调整的效果。
 
-用户的输入为：  \[ q = \{q_1, q_2, \dots\} \]  ，对齐后模型的输出为：\[ o = \{o_1, o_2, \dots\} \]  。( P_{\text{align}} \) 表示在该位置每一个 token 的概率分布。在位置 \( t \) 的 token 上下文表示为：\[ x_t = q + \{o_1, \dots, o_{t-1}\} \]  ，然后将 \( x_t \) 代入 Base LLM 中，生成一个概率分布 \( P_{\text{base}} \)。
+用户的输入为 \(q = \{q_1, q_2, \dots\}\)，对齐后模型的输出为 \(o = \{o_1, o_2, \dots\}\)。  
+\(P_{\text{align}}\) 表示在该位置的每一个 token 的概率分布。  
+
+在位置 \(t\) 的 token 上下文表示为 \(x_t = q + \{o_1, \dots, o_{t-1}\}\)。  
+然后将 \(x_t\) 代入 Base LLM 中，生成一个概率分布 \(P_{\text{base}}\)。
 
 =>如果基础模型学会通过对齐调整来修改其在此上下文中的行为，我们应该观察到  \( P_{\text{base}} \)和( P_{\text{align}} \) 之间的分布在此位置发生变化。另一方面，如果这两个分布彼此非常相似，则意味着对齐调整对此位置的影响微乎其微。
 
