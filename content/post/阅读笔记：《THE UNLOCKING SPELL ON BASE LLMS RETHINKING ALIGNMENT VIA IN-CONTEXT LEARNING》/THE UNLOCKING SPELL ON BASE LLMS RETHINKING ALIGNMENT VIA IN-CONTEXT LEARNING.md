@@ -28,7 +28,7 @@ typora-root-url: ./..\..\..\static
 
 **“表面对齐假设”**(《LIMA: Less Is More for Alignment》：仅使用 1K 个 SFT 示例也可以实现显着的对齐性能，这表明对齐调整的效果可能是“表面的”)，该假设认为对齐调整可能只是教会基础 LLM 选择一组数据格式来与用户交互。
 
-**<u>=>$\textcolor{CarnationPink}{Question：对齐调整(常用SFT+RLHF)究竟如何改变基础 LLM？}$</u>**
+**<u>=>Question：对齐调整(常用SFT+RLHF)究竟如何改变基础 LLM？</u>**
 
 ### Method
 
@@ -104,11 +104,11 @@ GPT-4                                                                           
 
 <img src="/image-20241014210847693.png" alt="image-20241014210847693" style="zoom:67%;" />
 
-URIAL 的表现优于无需调整对齐的基线方法。
+- URIAL 的表现优于无需调整对齐的基线方法。
 
-当基础 LLM 很强时，URIAL 甚至比 SFT 和 RLHF 表现更好。
+- 当基础 LLM 很强时，URIAL 甚至比 SFT 和 RLHF 表现更好。
 
-对齐的 LLM 可能会忘记知识并变得过于敏感。如图B.1、B.2
+- 对齐的 LLM 可能会忘记知识并变得过于敏感。如图B.1、B.2
 
 <img src="/image-20241015161735736.png" alt="image-20241015161735736" style="zoom: 50%;" /><img src="/image-20241015161829145.png" alt="image-20241015161829145" style="zoom:75%;" />
 
