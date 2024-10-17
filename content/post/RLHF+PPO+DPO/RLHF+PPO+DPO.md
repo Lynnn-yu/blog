@@ -5,7 +5,7 @@ draft: false
 params: 
   author: Lynn
 tags: ["强化学习", "大模型对齐","LLM","算法"]
-categories: ["论文阅读"]
+categories: ["阅读笔记"]
 description: "大模型对齐的RLHF/PPO/DPO技术介绍"
 summary: "大模型对齐的RLHF/PPO/DPO技术介绍"
 image:  "/image-20241017165214624.png"
