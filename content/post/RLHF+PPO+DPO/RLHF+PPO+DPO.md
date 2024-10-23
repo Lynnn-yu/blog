@@ -19,6 +19,8 @@ RLHF（Reinforcement Learning from Human Feedback，基于人类反馈的强化�
 
 > 即：收集符合人类价值偏好的数据集，对LLM进行微调，使其回答向人类价值观对齐。
 
+<img src="/1692179ef497ac98eaca9eb37d4f861e.png" alt="img" style="zoom:67%;" />
+
 ![img](/v2-ee215bedf45de4a5e08e5a3d04e2d275_1440w.webp)
 
 [《Learning to summarize from human feedback》](https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2009.01325)
@@ -99,7 +101,7 @@ $$
 - $ \hat{A}(s, a) $ 是**优势函数（advantage function）**，表示在给定状态 $s$ 下选择动作 $a $的优势（即相对于其他可能的动作，这个动作有多好）。
 - $\epsilon$ 是一个超参数，通常取值较小（例如 0.1 或 0.2），用于控制策略更新的幅度。
 
-PPO通过这个公式的**最小值操作**，确保策略更新时的比值 $r(\theta)$$ 不会偏离 1 太多。如果 $$r(\theta)$$ 的变化超过了 $$1 + \epsilon$$ 或小于 $$1 - \epsilon$，更新就会被限制在 $[1 - \epsilon, 1 + \epsilon]$ 之间。这种限制能够防止策略的更新过大，避免强化学习过程中出现不稳定的情况。
+PPO通过这个公式的**最小值操作**，确保策略更新时的比值 $r(\theta)$ 不会偏离 1 太多。如果 $r(\theta)$ 的变化超过了 $$1 + \epsilon$$ 或小于 $1 - \epsilon$，更新就会被限制在 $[1 - \epsilon, 1 + \epsilon]$ 之间。这种限制能够防止策略的更新过大，避免强化学习过程中出现不稳定的情况。
 
 **简化解释：**
 
